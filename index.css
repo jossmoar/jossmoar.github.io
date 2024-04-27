@@ -1,0 +1,274 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 4cm; /* Ajustar la distancia desde la parte superior */
+}
+
+.menu {
+    background-color: rgba(244, 215, 214, 0.7); /* Lila transparente */
+    position: fixed;
+    top: 3.2cm; /* Ajustar la distancia desde la parte superior */
+    left: 2cm; /* Ajustar la distancia desde el borde izquierdo */
+    z-index: 1;
+    font-size: 1.2em; /* Tamaño de la fuente */
+    border-radius: 20px; /* Redondear los bordes */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px; /* Aumentar el espacio entre los botones */
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px; /* Aumentar el espacio alrededor del texto */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.menu li a:hover {
+    background-color: #eee; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.menu li.active a {
+    font-weight: bold; /* Estilo del botón activo */
+}
+
+.content {
+    display: none; /* Ocultar todos los contenidos por defecto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+}
+.perfil-superior {
+    max-width: 1250px;
+    width: 730px;
+    margin: 220px auto 20px 80px; /* Se aumenta el margen superior */
+    background-color: rgba(244, 215, 214, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.perfil-inferior {
+    max-width: 1250px;
+    width: 730px;
+    margin: auto auto auto 80px;
+    background-color: rgba(244, 215, 214, 0.7);
+    border-radius: 20px;
+    padding: 30px; /* Se aumenta el padding */
+    text-align: justify; /* Justificar el texto */
+    color: black;
+}
+
+.descripcion-grande {
+    font-size: 1.0em; /* Se reduce el tamaño de fuente */
+    line-height: 1.6;
+    margin: 37px 40; /* Se aumenta el espacio alrededor del párrafo */
+}
+
+
+.nombre {
+    font-size: 2.5em; /* Tamaño de la fuente mucho más grande */
+    margin-bottom: 10px; /* Espacio entre el nombre y la descripción */
+}
+
+
+
+
+.contenido-redondeado {
+    background-color: rgba(244, 215, 214, 0.7); /* Lila transparente */
+    border-radius: 20px; /* Redondear los bordes */
+    padding: 20px;
+    text-align: center;
+    color: black; /* Color de la letra */
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.habilidades-container {
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* Agregar posición relativa para que la línea sea absoluta respecto a este contenedor */
+    width: 700px; /* Ancho del contenedor */
+    margin: 65px auto auto 70px; /* Centrar el contenedor horizontalmente */
+}
+
+.habilidades-blandas,
+.habilidades-tecnicas {
+    flex: 1;
+    padding: 0 40px; /* Agregar más espacio a los lados del contenido */
+}
+
+.habilidades-blandas ul,
+.habilidades-tecnicas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Eliminar el margen predeterminado */
+    line-height: 1.7;
+}
+
+.habilidades-blandas h3,
+.habilidades-tecnicas h3 {
+    text-align: center;
+}
+
+.linea-vertical {
+    position: absolute; /* Hacer que la línea sea absoluta */
+    top: 25px; /* Posicionarla 20px abajo del borde superior del contenedor */
+    bottom: 25px; /* Dejar 20px antes del borde inferior del contenedor */
+    left: calc(50% - 1px); /* Posicionarla en el centro del contenedor */
+    width: 2px; /* Ancho de la línea vertical */
+    background-color: black; /* Color de la línea */
+}
+
+.formacion-container {
+    max-width: 1250px;
+  
+    width: 700px; /* Ancho del contenedor */
+    margin: 65px auto auto 70px; /* Centrar el contenedor horizontalmente */
+}
+
+.formacion-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.formacion-titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formacion-subtitulo {
+    margin-top: 5px;
+}
+
+.formacion-universidad {
+    margin-bottom: 20px;
+}
+
+.certificacion-container {
+    max-width: 1250px;
+  
+    width: 700px; /* Ancho del contenedor */
+    margin: 65px auto auto 70px; /* Centrar el contenedor horizontalmente */
+}
+
+.certificaciones-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.certificacion-titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.certificacion-organizacion {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contacto input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.content#contacto {
+    top: 70%; /* Ajustar la posición vertical */
+}
+
+.contacto-container {
+    max-width: 1250px;
+  
+    width: 600px; /* Ancho del contenedor */
+    margin: 65px auto auto 70px; /* Centrar el contenedor horizontalmente */
+}
+
+.logo-container {
+    position: fixed;
+    top: 10px; /* Cambia esta propiedad según tu preferencia de la distancia desde el borde superior */
+    right: 40px; /* Cambia esta propiedad según tu preferencia de la distancia desde el borde derecho */
+    z-index: 999; /* Asegura que el logo esté por encima del resto del contenido */
+}
+
+.logo-container img {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+#scrollTopButton {
+    display: none; /* Ocultar inicialmente el botón */
+    position: fixed; /* Fijar el botón en la esquina inferior derecha */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}

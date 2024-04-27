@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMA Developer - Más sobre mi</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="mostrarPerfil()">
+    <video autoplay muted loop id="bg-video">
+        <source src="video4.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="logo-container">
+        <a href="homepage.html">
+        <img src="logoPNG.png" alt="Logo pequeño">
+    </a>
+    </div>
+    <div class="container">
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarContenido('perfil')">Perfil</a></li>
+                <li><a href="#" onclick="mostrarContenido('habilidades')">Habilidades</a></li>
+                <li><a href="#" onclick="mostrarContenido('formacion')">Formación</a></li>
+                <li><a href="#"onclick="mostrarContenido('certificaciones')">Certificaciones</a></li>
+                <li><a href="#"onclick="mostrarContenido('contacto')">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="content" id="perfil">
+            <div class="contenido-redondeado perfil-superior">
+                <h1 class="nombre">Joselin Montero Arias</h1>
+                <p class="descripcion">Técnico en Desarrollo del Software</p>
+            </div>
+            <div class="contenido-redondeado perfil-inferior">
+                <p class="descripcion-grande">
+                    Como ingeniera de software especializada en el desarrollo tanto de Front-End como de Back-End, mi enfoque se centra en la creación de soluciones digitales robustas y eficientes para abordar los desafíos empresariales más apremiantes. <br><br> Con una sólida formación en tecnologías de vanguardia y una profunda comprensión de los principios de diseño y desarrollo de software, me apasiona crear interfaces de usuario intuitivas y receptivas que brinden una experiencia óptima al usuario final, manteniendo al mismo tiempo un código limpio y modular. <br> <br> Además de mi experiencia técnica, poseo habilidades sólidas de comunicación y resolución de problemas, lo que me permite colaborar efectivamente con equipos multidisciplinarios y abordar de manera proactiva los desafíos que surgen durante el ciclo de desarrollo de software.
+                </p>
+            </div>
+            
+            
+        </div>
+        
+        
+        <div class="content" id="habilidades">
+            <div class="contenido-redondeado habilidades-container">
+                <div class="habilidades-blandas">
+                    <h3>Habilidades Blandas</h3>
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Gestión de estrés</li>
+                        <li>Comunicación</li>
+                        <li>Compromiso</li>
+                    </ul>
+                </div>
+                <div class="linea-vertical"></div> <!-- Línea vertical divisoria -->
+                <div class="habilidades-tecnicas">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>JavaFX</li>
+                        <li>Bases de datos</li>
+                        <li>Node.js</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content" id="formacion">
+            <div class="contenido-redondeado formacion-container">
+                <h2 class="subtitulo">Formación</h2>
+                <ul class="formacion-lista">
+                    <li>
+                        <p class="formacion-titulo">Técnico en Desarrollo del Software - 2022</p>
+                        <p class="formacion-universidad">Universidad Cenfotec</p>
+                        <br>
+                    
+                    </li>
+                    <li>
+                        <p class="formacion-titulo">Bachillerato en Educación Media - 2018</p>
+                        <p class="formacion-universidad">Liceo de Santa Bárbara de Heredia</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="content" id="certificaciones">
+            <div class="contenido-redondeado certificacion-container">
+                <h2 class="subtitulo">Certificaciones</h2>
+                <ul class="certificaciones-lista">
+                    <li>
+                        <p class="certificacion-titulo">Scrum Fundamental Certified - 2022</p>
+                        <p class="certificacion-organizacion">SCRUMStudy</p>
+                        <br>
+                    </li>
+                    <li>
+                        <p class="certificacion-titulo">CCNAv7: Introducción a Redes - 2023</p>
+                        <p class="certificacion-organizacion">Cisco Networking Academy</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content" id="contacto">
+            <div class="contenido-redondeado contacto-container">
+                <h2 class="subtitulo">Ponte en contacto!</h2>
+                <form action="formulario.php" method="post" class="formulario-contacto">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion">
+                    
+                    <label for="mensaje">Escribe tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        
+        
+    </div>
+    <button onclick="scrollToTop()" id="scrollTopButton" title="Volver arriba">↑</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

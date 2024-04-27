@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni&display=swap');
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni', serif;
+    
+    color: white;
+}
+
+
+
+
+.navbar {
+    background-color: rgba(244, 215, 214, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif; /* Agregar "Helvetica" como fuente para el navbar */
+}
+
+.main-content {
+    margin-top: 40px;
+    position: relative;
+    z-index: 1; /* Ajustado a 1 para que esté por encima del video */
+    padding-top: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 2.9em;
+    font-family: 'Bodoni', serif;
+
+}
+
+.hero-text h2{
+    font-size: 1.2em;
+
+}
+.hero-image img {
+    max-width: 100%; /* Reducir el tamaño de la imagen */
+    width: 50%;
+    height: auto;
+    margin: auto 0px auto 170px;
+}
+.hero-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px 95px 20px 0; /* Ajuste el padding (top, right, bottom, left) */
+
+    font-family: 'Bodoni', serif; /* Agregar "Helvetica" como fuente para el texto del héroe */
+    
+}
+
+
+
+
+.mission-section {
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 50px;
+   
+}
+
+.mission, .vision {
+    justify-content: center;
+    width: 37%;
+    font-size: 1.1em;
+    
+}
+
+.vision{
+    margin-right: 40px;
+}
+
+.mission{
+    margin-left: 40px;
+}
+
+.services-section {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+.btnn{
+    background-color: rgba(244, 215, 214, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.video-container {
+    width: 320px; /* Ajusta el ancho del contenedor del video */
+    height: 240px; /* Ajusta la altura del contenedor del video */
+    
+}
+
+.video-container video {
+    margin-left: 130px;
+    width: 70%; /* El video ocupará el 100% del contenedor */
+    height: 70%; /* El video ocupará el 100% del contenedor */
+    object-fit: cover; /* El video se ajustará al contenedor sin distorsionar */
+    
+}
+
+.carousel-section{
+padding-top: 100px;
+justify-content: center;
+padding-bottom: 80px;
+}
+
+
+.carousel {
+
+    width: 200px; /* Ancho del carousel */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    margin-left: 585px;
+  }
+  
+  .carousel-inner {
+    width: 100%; /* Ancho del contenido del carousel */
+    height: auto; /* Altura automática para ajustarse al contenido */
+  }
+  
+ 
+  .carousel-item img {
+    max-width: 100%;
+    height: 300px; /* Establece aquí la altura deseada para las imágenes */
+    object-fit: cover;
+}
+
+
+  
+  .carousel-caption {
+    width: 100%; /* Ajuste del ancho de la leyenda */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de la leyenda */
+    color: white; /* Color del texto de la leyenda */
+    bottom: 0; /* Ajuste de la posición vertical de la leyenda */
+    left: 0; /* Ajuste de la posición horizontal de la leyenda */
+    padding: 10px; /* Relleno de la leyenda */
+    font-size: 12px; /* Tamaño de fuente de la leyenda */
+  }
+  
+  .valores-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.valores {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 175px;
+    font-size: 1.1em;
+}
+
+.video-container {
+    width: 50%;
+    text-align: right;
+   
+}
+
+.valores, .video {
+    justify-content: center;
+    width: 37%;
+    text-align: center;
+    
+}
+
+.valores{
+    margin-right: 40px;
+}
+
+.videoDos{
+ 
+    margin: 50px auto auto 130px;
+    padding-right: 90px;
+    margin-right: 125px;
+}
+
+
+.carousel-item img {
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  #bg-videoo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cambiado a 100vw para ocupar toda la anchura de la ventana */
+    height: 100vh; /* Cambiado a 100vh para ocupar toda la altura de la ventana */
+    z-index: -1;
+    object-fit: cover;
+}
+
+#scrollTopButton {
+    display: none; /* Ocultar inicialmente el botón */
+    position: fixed; /* Fijar el botón en la esquina inferior derecha */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    background-color: rgba(244, 215, 214, 0.7);/* Color de fondo */
+    color: rgb(2, 2, 2); /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos adicionales según sea necesario */
