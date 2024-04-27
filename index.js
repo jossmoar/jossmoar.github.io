@@ -5,7 +5,7 @@ $(document).ready(function(){
   
      
 
-      function redirigirAIndex() {
+      function redirigirAHome() {
         window.location.href = 'homepage.html';
       }
 
