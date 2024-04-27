@@ -1,147 +1,160 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JMA Developer - Más sobre mi</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body onload="mostrarPerfil()">
-    <video autoplay muted loop id="bg-video">
-        <source src="video4.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-    </video>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JMA Developer</title>
+      <link rel="stylesheet" href="index.css">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Bootstrap CSS -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap JS (optional, if you're using JavaScript components from Bootstrap) -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+    </head>
+<body >
+  <video autoplay muted loop id="bg-videoo">
+    <source src="video4.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
 
-    <div class="logo-container">
-        <a href="homepage.html">
-        <img src="logoPNG.png" alt="Logo pequeño">
-    </a>
-    </div>
-    <div class="container">
-        <div class="menu" id="menu">
-            <ul>
-                <li><a href="#" onclick="mostrarContenido('perfil')">Perfil</a></li>
-                <li><a href="#" onclick="mostrarContenido('habilidades')">Habilidades</a></li>
-                <li><a href="#" onclick="mostrarContenido('formacion')">Formación</a></li>
-                <li><a href="#"onclick="mostrarContenido('certificaciones')">Certificaciones</a></li>
-                <li><a href="#"onclick="mostrarContenido('contacto')">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="content" id="perfil">
-            <div class="contenido-redondeado perfil-superior">
-                <h1 class="nombre">Joselin Montero Arias</h1>
-                <p class="descripcion">Técnico en Desarrollo del Software</p>
+  </video>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="Nuevo CV Joselin Montero F.pdf" download>CV</a></li>
+        <li><a href="https://www.linkedin.com/in/joselin-montero-arias-8aa641239/" onclick="redirectToLinkedIn()"> LinkedIn</a></li>
+        <li><a href="https://wa.me/63461211" onclick="redirectToWhatsApp()"> WhatsApp</a></li>
+        <li><a href="https://github.com/jossmoar" onclick="redirectToGitHub()"> GitHub</a></li>
+    </ul>
+</nav>
+
+<div class="main-content">
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="logoPNG.png" alt="Hero Image">
             </div>
-            <div class="contenido-redondeado perfil-inferior">
-                <p class="descripcion-grande">
-                    Como ingeniera de software especializada en el desarrollo tanto de Front-End como de Back-End, mi enfoque se centra en la creación de soluciones digitales robustas y eficientes para abordar los desafíos empresariales más apremiantes. <br><br> Con una sólida formación en tecnologías de vanguardia y una profunda comprensión de los principios de diseño y desarrollo de software, me apasiona crear interfaces de usuario intuitivas y receptivas que brinden una experiencia óptima al usuario final, manteniendo al mismo tiempo un código limpio y modular. <br> <br> Además de mi experiencia técnica, poseo habilidades sólidas de comunicación y resolución de problemas, lo que me permite colaborar efectivamente con equipos multidisciplinarios y abordar de manera proactiva los desafíos que surgen durante el ciclo de desarrollo de software.
-                </p>
+            <div class="hero-text">
+                <h1>¡Bienvenido a <br>  JMA Developer!</h1>
+                <h2>"Donde la creatividad encuentra su camino digital"</h2>
             </div>
             
+        </div>
+    </div>
+
+    <div class="valores-section">
+        <div class="valores">
+            <h3>Mis valores:</h3>
+            <p>Respetuosa:  Soy respetuosa para fomentar relaciones sólidas entre los miembros del equipo. <br>
+                Empatía: Demuestra un gran respeto por los demás y contribuye a crear una cultura de equipo. <br>
+                Responsable: Para lograr las metas es necesario ser responsable con lo que sabemos que debemos hacer.
+            </p>
+        </div>
+        <div class="video-container videoDos">
+            <video autoplay loop muted>
+                <source src="videoHome.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+    
+    
+
+    <div class="mission-section">
+        <div class="mission">
+            <h3>Misión:</h3>
+            <p>Mi misión es utilizar mis habilidades en el desarrollo de software para impactar positivamente, desarrollando aplicaciones y sistemas que sean efectivos y accesibles.</p>
+            <!-- Aquí puedes insertar tu video -->
             
         </div>
-        
-        
-        <div class="content" id="habilidades">
-            <div class="contenido-redondeado habilidades-container">
-                <div class="habilidades-blandas">
-                    <h3>Habilidades Blandas</h3>
-                    <ul>
-                        <li>Trabajo en equipo</li>
-                        <li>Gestión de estrés</li>
-                        <li>Comunicación</li>
-                        <li>Compromiso</li>
-                    </ul>
-                </div>
-                <div class="linea-vertical"></div> <!-- Línea vertical divisoria -->
-                <div class="habilidades-tecnicas">
-                    <h3>Habilidades Técnicas</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>JavaFX</li>
-                        <li>Bases de datos</li>
-                        <li>Node.js</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
+        <div class="vision">
+            <h3>Visión:</h3>
+            <p>Llegar a ser una líder en el campo del desarrollo de software, innovando constantemente para crear soluciones tecnológicas que mejoren el crecimiento de la empresa y contribuyan al avance de la sociedad. <br> En mi camino hacia la cima, especializándome en ciberseguridad, brindaré a la empresa en la que labore un enfoque integral que proteja sus sistemas y datos, permitiéndole navegar con confianza en el mundo digital actual, siendo reconocida por dar mi mejor aporte.</p>
+            <br> <br>
         </div>
-
-
-        <div class="content" id="formacion">
-            <div class="contenido-redondeado formacion-container">
-                <h2 class="subtitulo">Formación</h2>
-                <ul class="formacion-lista">
-                    <li>
-                        <p class="formacion-titulo">Técnico en Desarrollo del Software - 2022</p>
-                        <p class="formacion-universidad">Universidad Cenfotec</p>
-                        <br>
-                    
-                    </li>
-                    <li>
-                        <p class="formacion-titulo">Bachillerato en Educación Media - 2018</p>
-                        <p class="formacion-universidad">Liceo de Santa Bárbara de Heredia</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        
-        <div class="content" id="certificaciones">
-            <div class="contenido-redondeado certificacion-container">
-                <h2 class="subtitulo">Certificaciones</h2>
-                <ul class="certificaciones-lista">
-                    <li>
-                        <p class="certificacion-titulo">Scrum Fundamental Certified - 2022</p>
-                        <p class="certificacion-organizacion">SCRUMStudy</p>
-                        <br>
-                    </li>
-                    <li>
-                        <p class="certificacion-titulo">CCNAv7: Introducción a Redes - 2023</p>
-                        <p class="certificacion-organizacion">Cisco Networking Academy</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="content" id="contacto">
-            <div class="contenido-redondeado contacto-container">
-                <h2 class="subtitulo">Ponte en contacto!</h2>
-                <form action="formulario.php" method="post" class="formulario-contacto">
-
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
-                    
-                    <label for="direccion">Dirección</label>
-                    <input type="text" id="direccion" name="direccion">
-                    
-                    <label for="mensaje">Escribe tu mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-                    
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-        
-        
     </div>
-    <button onclick="scrollToTop()" id="scrollTopButton" title="Volver arriba">↑</button>
 
-    <script src="index.js"></script>
+    <div class="services-section">
+        <p>Creación y diseño en páginas web tanto en Backend como en Fronted y manejo de bases de datos.</p>
+        <button class="btnn"  onclick="redirigirAHome()">Más sobre mí</button>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-section" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="git.jpeg" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="Java-logo.png" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="linux.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="SQL1.png" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="mysql.png" class="d-block w-100" alt="...">
+           
+          </div>
+
+          <div class="carousel-item">
+            <img src="tres.png" class="d-block w-100" alt="...">
+           
+          </div>
+
+          <div class="carousel-item">
+            <img src="oracle.png" class="d-block w-100" alt="...">
+           
+          </div>
+
+          <div class="carousel-item">
+            <img src="azure.png" class="d-block w-100" alt="...">
+           
+          </div>
+
+          <div class="carousel-item">
+            <img src="bootstrap-logo-vector.png" class="d-block w-100" alt="...">
+            
+          </div>
+
+          <div class="carousel-item">
+            <img src="python.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      
+    
+    
+
+    
+</div>
+
+<button onclick="scrollToTop()" id="scrollTopButton" title="Volver arriba">↑</button>
+
+
+<script src="index.js"></script>
 </body>
 </html>
